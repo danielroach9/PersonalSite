@@ -12,8 +12,7 @@ body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 hr {
-  border-color: #F05F40;
-  border-width: 3px;
+  border: 3px #F05F40;
   max-width: 50px;
 }
 hr.light {
@@ -154,9 +153,8 @@ header {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  background-position: center;
-  background-image: url('../img/header.jpg');
-  text-align: center;
+    background: url('../img/header.jpg') center;
+    text-align: center;
   color: white;
 }
 header .header-content {
@@ -288,8 +286,8 @@ header .header-content .header-content-inner p {
   padding-left: 0;
 }
 .btn-default {
-  color: #222222;
-  background-color: white;
+  color: white;
+  background-color: grey;
   border-color: white;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -458,4 +456,55 @@ Custom Styling
   border: solid 2px white;
   color: #F05F40;
   background: black;
+}
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+.hiddentext {
+    visibility: hidden;
+}
+#atw {
+    padding-bottom: 0;
 }
